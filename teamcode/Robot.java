@@ -33,5 +33,21 @@ public class Robot {
         this.backLeft.setPower(backLeft);
         this.backRight.setPower(backRight);
     }
+    
+    public void mecDriveLazy(double power) {
+        this.frontLeft.setPower(power);
+        this.frontRight.setPower(power);
+
+        this.backLeft.setPower(power);
+        this.backRight.setPower(power);
+    }
+
+    public void mecDriveLazyTurn(double power1, double power2) {
+        this.frontLeft.setPower(power1);
+        this.frontRight.setPower(power2);
+
+        this.backLeft.setPower(power2);
+        this.backRight.setPower(power1);
+    }
 
 }
